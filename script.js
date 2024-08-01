@@ -16,9 +16,9 @@ function startTimer()
 function wink()
 {
     var img = document.getElementById("wink");
-    if (img.src.endsWith("about1.PNG")) {
-        img.src = "./assets/about2.PNG";
+    if (img.src.endsWith("bunny1.png")) {
+        img.src = "./assets/bunny2.png";
     } else {
-        img.src = "./assets/about1.PNG";
+        img.src = "./assets/bunny1.png";
     }
 }
