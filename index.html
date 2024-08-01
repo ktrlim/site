@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+
+    </head>
+    <body onload="startTimer();">
+        <nav id="desktopnav">
+            <div class="logo">
+                Katherine Lim
+            </div>
+            <div>
+                <ul class="navlinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburgernav">
+            <div class="logo">Katherine Lim</div>
+            <div class="hamburgermenu">
+                <div class="hamburgericon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menulinks">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__piccontainer">
+                <img src="./assets/pfp.png" alt="Katherine Lim picture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello! I'm</p>
+                <h1 class="title">Katherine Lim</h1>
+                <p class="section__text__p2">Recent Computer Science Graduate</p>
+                <div class ="btncontainer">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/LimResume.pdf')">
+                        My Resume
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socialscontainer">
+                    <img 
+                        src="assets/linkedinLogo.png"
+                        alt="LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/k-lim5', '_blank'"
+                    />
+                    <img 
+                        src="assets/githubLogo.png"
+                        alt="GitHub profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/ktrlim', '_blank'"
+                    />
+                    
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get to know more</p>
+            <h1 class="title">About Me</h1>
+            <div class="sectioncontainer">
+                <div class="section__piccontainer">
+                    <img 
+                        src="./assets/about1.png"
+                        alt="Graduation cap"
+                        class="aboutpic"
+                        id="wink"
+                    />
+                </div>
+                <div class="aboutdetailscontainer">
+                    <div class="aboutcontainers">
+                        <div class="detailscontainer">
+                            <img src="./assets/education.png"
+                            alt="experience icon"
+                            class="icon"/>
+                            <h3>Education</h3>
+                            <p>Bachelor of Science<br />Computer Science<br />Towson University</p>
+                        </div>
+                        <div class="detailscontainer">
+                            <img src="./assets/math.png"
+                            alt="experience icon"
+                            class="icon"/>
+                            <h3>Experience</h3>
+                            <p>Mathematics & CIS Tutor<br />Carroll Community College</p>
+                        </div>
+                        <div class="detailscontainer">
+                            <img src="./assets/experience.png"
+                            alt="experience icon"
+                            class="icon"/>
+                            <h3>Accomplishments</h3>
+                            <p><a href="https://upe.acm.org/" target="_blank" class="inlinelink">Upsilon Pi Epsilon</a><br />Member</p>
+                        </div>
+                    </div>
+                    <div class="textcontainer">
+                        <p>
+                            I am a recent graduate of Towson University with a Bachelor's degree in Computer Science and a 4.0 GPA. Before transferring to Towson University, I earned an Associate of Arts and Sciences at Carroll Community College. My programming experience primarily includes Java and Python, complemented by proficiency in JavaScript, HTML/CSS, SQL, and Kotlin. Additionally, I have experience working with the MERN stack. I currently tutor mathematics and computer science courses at Carroll Community College.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png"
+                alt="arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#experience'"
+            />
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore my</p>
+            <h1 class="title">Experience</h1>
+            <div class="expdetailscontainer">
+                <div class="aboutcontainers">
+                    <div class="detailscontainer">
+                        <h2 class="expsubtitle">Languages</h2>
+                        <div class="articlecontainer">
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Kotlin</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>SQL</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>C++</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="detailscontainer">
+                        <h2 class="expsubtitle">Skills</h2>
+                        <div class="articlecontainer">
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>MERN Stack</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                    src="./assets/checkmark.png"
+                                    alt="experience icon"
+                                    class="icon"
+                                />
+                                <div>
+                                    <h3>Google Firebase</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img 
+                src="./assets/arrow.png"
+                alt="arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+            />
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Check out my recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="expdetailscontainer">
+                <div class="aboutcontainers">
+                    <div class="detailscontainer colorcontainer">
+                        <div class="articlecontainer">
+                            <img 
+                                src="./assets/TPicon.png"
+                                alt="TranslatePal"
+                                class="projimg"
+                            />
+                        </div>
+                        <h2 class="expsubtitle projtitle">TranslatePal</h2>
+                        <div class="btncontainer">
+                            <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://bitbucket.org/klim5/translatepal/'"
+                            >
+                            BitBucket
+                            </button>
+                            <!-- <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/ktrlim'"
+                            >
+                            Live Demo
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="detailscontainer colorcontainer">
+                        <div class="articlecontainer">
+                            <img 
+                                src="./assets/nfa.png"
+                                alt="Project 2"
+                                class="projimg"
+                            />
+                        </div>
+                        <h2 class="expsubtitle projtitle">NFA Simulator</h2>
+                        <div class="btncontainer">
+                            <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/ktrlim/NFA'"
+                            >
+                            GitHub
+                            </button>
+                            <!-- <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/ktrlim'"
+                            >
+                            Live Demo
+                            </button> -->
+                        </div>
+                    </div>
+                    <div class="detailscontainer colorcontainer">
+                        <div class="articlecontainer">
+                            <img 
+                                src="./assets/parser.png"
+                                alt="Project 2"
+                                class="projimg"
+                            />
+                        </div>
+                        <h2 class="expsubtitle projtitle">Language Parser</h2>
+                        <div class="btncontainer">
+                            <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/455-partners/Programming-Languages/tree/main/Program2'"
+                            >
+                            GitHub
+                            </button>
+                            <!-- <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/ktrlim'"
+                            >
+                            Live Demo
+                            </button> -->
+                        </div>
+                    </div>
+                    <!-- add more projects: -->
+                    <!-- <div class="detailscontainer colorcontainer">
+                        <div class="articlecontainer">
+                            <img 
+                                src="./assets/project-3.png"
+                                alt="Project 3"
+                                class="projimg"
+                            />
+                        </div>
+                        <h2 class="expsubtitle projtitle">Project 1</h2>
+                        <div class="btncontainer">
+                            <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/ktrlim'"
+                            >
+                            GitHub
+                            </button>
+                            <button
+                                class="btn btn-color-2 projbtn"
+                                onclick="location.href='https://github.com/ktrlim'"
+                            >
+                            Live Demo
+                            </button>
+                        </div>
+                    </div> -->
+                </div>
+                <p class="section__text__p3">Repositories are private. Please request access!</p>
+            </div>
+            <img 
+                src="./assets/arrow.png"
+                alt="arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+            />
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in touch!</p>
+            <h1 class="title">Contact me</h1>
+            <div class="contactinfouppercontainer">
+                <div class="contactinfocontainer">
+                    <img 
+                        src="./assets/emailLogo.png"
+                        alt="email icon"
+                        class="icon contacticon"
+                    />
+                    <p><a href="mailto:katherinerlim@gmail.com">Email Me</a></p>
+                </div>
+                <div class="contactinfocontainer">
+                    <img 
+                        src="./assets/linkedinLogo.png"
+                        alt="LinkedIn icon"
+                        class="icon contacticon"
+                    />
+                    <p><a href="http://www.linkedin.com/in/k-lim5" target="_blank">My LinkedIn</a></p>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <nav>
+                <div class="navlinkscontainer">
+                    <ul class="navlinks">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Katherine Lim. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+
+    </body>
+</html>
